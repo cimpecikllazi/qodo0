@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "ReplyRobot backend server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "build": "echo \"No build step required\"",
+    "db:migrate": "node db.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "dotenv": "^16.3.1",
+    "express-session": "^1.17.3",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "sqlite3": "^5.1.6",
+    "sequelize": "^6.32.1",
+    "stripe": "^14.4.0",
+    "openai": "^4.10.0",
+    "node-cron": "^3.0.2",
+    "zod": "^3.22.2",
+    "axios": "^1.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
